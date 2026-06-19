@@ -35,9 +35,9 @@ final class AdsService {
         #endif
     }
 
-    /// 綜合判斷是否應顯示廣告（SDK 存在且遠端開啟）。
+    /// 綜合判斷是否應顯示廣告：SDK 存在，且通過 AppConfig 的總開關 +「送審版號閘控」。
     var shouldShowAds: Bool {
-        isSDKAvailable && AppConfig.shared.adsEnabled
+        isSDKAvailable && AppConfig.shared.resolvedAdsEnabled
     }
 
     // MARK: Lifecycle

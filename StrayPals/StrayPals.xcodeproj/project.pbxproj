@@ -13,6 +13,9 @@
 		AA0000000000000000000051 /* AdoptionWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000050 /* AdoptionWidgetBundle.swift */; };
 		AA0000000000000000000053 /* AdoptionCountdownLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000052 /* AdoptionCountdownLiveActivity.swift */; };
 		AA0000000000000000000069 /* MaoWoWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000060 /* MaoWoWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA0000000000000000000073 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000071 /* FirebaseCore */; };
+		AA0000000000000000000074 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000072 /* FirebaseRemoteConfig */; };
+		AA0000000000000000000082 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000081 /* GoogleMobileAds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA0000000000000000000020 /* Kingfisher in Frameworks */,
+				AA0000000000000000000073 /* FirebaseCore in Frameworks */,
+				AA0000000000000000000074 /* FirebaseRemoteConfig in Frameworks */,
+				AA0000000000000000000082 /* GoogleMobileAds in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +176,9 @@
 			name = StrayPals;
 			packageProductDependencies = (
 				AA0000000000000000000021 /* Kingfisher */,
+				AA0000000000000000000071 /* FirebaseCore */,
+				AA0000000000000000000072 /* FirebaseRemoteConfig */,
+				AA0000000000000000000081 /* GoogleMobileAds */,
 			);
 			productName = StrayPals;
 			productReference = AA0000000000000000000004 /* StrayPals.app */;
@@ -248,6 +257,8 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				AA0000000000000000000022 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				AA0000000000000000000070 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				AA0000000000000000000080 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AA0000000000000000000003 /* Products */;
@@ -421,7 +432,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0.26061901;
 				DEVELOPMENT_TEAM = H9P8S2RG7V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StrayPals/Resources/Info.plist;
@@ -430,7 +441,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.straypals.StrayPals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -445,7 +456,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0.0.26061901;
 				DEVELOPMENT_TEAM = H9P8S2RG7V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StrayPals/Resources/Info.plist;
@@ -454,7 +465,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.straypals.StrayPals;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -610,6 +621,22 @@
 				minimumVersion = 8.0.0;
 			};
 		};
+		AA0000000000000000000070 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+		AA0000000000000000000080 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googleads/swift-package-manager-google-mobile-ads.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -617,6 +644,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AA0000000000000000000022 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		AA0000000000000000000071 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0000000000000000000070 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		AA0000000000000000000072 /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0000000000000000000070 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		AA0000000000000000000081 /* GoogleMobileAds */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA0000000000000000000080 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */;
+			productName = GoogleMobileAds;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
