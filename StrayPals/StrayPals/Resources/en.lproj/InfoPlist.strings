@@ -1,0 +1,5 @@
+"CFBundleDisplayName" = "MaoWo";
+"NSCameraUsageDescription" = "Used to photograph a stray animal you found, so you can report it to a shelter or animal authority.";
+"NSPhotoLibraryUsageDescription" = "Used to choose a stray animal photo, so you can report it to a shelter or animal authority.";
+"NSLocationWhenInUseUsageDescription" = "Used to sort shelter animals nearest to your location.";
+"NSUserTrackingUsageDescription" = "Used to show more relevant ads that help keep this app free.";

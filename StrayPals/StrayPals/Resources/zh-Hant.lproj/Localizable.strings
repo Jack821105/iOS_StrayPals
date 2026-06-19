@@ -1,0 +1,189 @@
+/* 毛窩 — 繁體中文 */
+
+"app.name" = "毛窩";
+"launch.subtitle" = "一起幫浪浪找個家";
+
+"settings.title" = "設定";
+"settings.language" = "語言";
+"language.system" = "跟隨系統";
+
+"tab.adopt" = "認養";
+"tab.report" = "通報";
+"tab.mine" = "我的";
+
+"action.retry" = "重新載入";
+"action.cancel" = "取消";
+"action.ok" = "了解";
+"action.goSettings" = "前往設定";
+
+"list.search.placeholder" = "搜尋收容所、品種、毛色…";
+"list.empty.title" = "找不到符合的浪浪";
+"list.empty.message" = "試試其他關鍵字或篩選條件。";
+"list.error.title" = "載入失敗";
+
+"kind.all" = "全部";
+"kind.dog" = "狗";
+"kind.cat" = "貓";
+"kind.other" = "其他";
+
+"sort.title" = "排序方式";
+"sort.latest" = "最新開放";
+"sort.updated" = "最近更新";
+"sort.shelter" = "依收容所";
+"sort.kind" = "依種類";
+"sort.distance" = "離你最近";
+"sort.distancePicker" = "離你最近（依定位）";
+
+"location.denied.title" = "需要定位權限";
+"location.denied.message" = "請到「設定」開啟定位，才能依距離排序最近的浪浪。";
+
+"filter.title" = "進階篩選";
+"filter.reset" = "重置";
+"filter.apply" = "套用";
+"filter.sex" = "性別";
+"filter.age" = "年齡";
+"filter.bodyType" = "體型";
+"filter.condition" = "條件";
+"filter.city" = "縣市";
+"filter.sterilized" = "已絕育";
+"filter.vaccinated" = "已打疫苗";
+"filter.open" = "開放認養中";
+
+"value.sex.male" = "公";
+"value.sex.female" = "母";
+"value.age.adult" = "成年";
+"value.age.child" = "幼年";
+"value.body.small" = "小型";
+"value.body.medium" = "中型";
+"value.body.big" = "大型";
+"value.unknown" = "未知";
+"value.notProvided" = "未提供";
+"value.sterilized.yes" = "已絕育";
+"value.sterilized.no" = "未絕育";
+"value.vaccine.yes" = "已施打";
+"value.vaccine.no" = "未施打";
+"value.noRemark" = "目前沒有更多說明。";
+"value.city.other" = "其他";
+
+"detail.section.basic" = "基本資料";
+"detail.section.shelter" = "收容所資訊";
+"detail.section.note" = "認養說明";
+"detail.status.open" = "開放認養中";
+"detail.status.info" = "認養資訊";
+"detail.row.kind" = "種類";
+"detail.row.variety" = "品種";
+"detail.row.sex" = "性別";
+"detail.row.age" = "年齡";
+"detail.row.body" = "體型";
+"detail.row.color" = "毛色";
+"detail.row.sterilized" = "絕育";
+"detail.row.vaccine" = "狂犬病疫苗";
+"detail.row.foundPlace" = "尋獲地";
+"detail.row.openDate" = "開放日期";
+"detail.row.shelter" = "收容所";
+"detail.row.address" = "地址";
+"detail.row.phone" = "電話";
+"detail.row.note" = "備註";
+"detail.action.call" = "撥打電話";
+"detail.action.map" = "開啟地圖";
+"detail.noPhone" = "此收容所未提供電話。";
+"detail.noAddress" = "此收容所未提供地址。";
+
+"mine.mode.favorites" = "收藏";
+"mine.mode.recent" = "最近瀏覽";
+"mine.empty.fav.title" = "還沒有收藏";
+"mine.empty.fav.message" = "在動物卡片上點擊愛心，就能把喜歡的浪浪加入這裡。";
+"mine.empty.recent.title" = "還沒有瀏覽紀錄";
+"mine.empty.recent.message" = "看過的浪浪會出現在這裡，方便你回頭再看看。";
+
+"report.photo.hint" = "點擊拍照或選擇照片";
+"report.section.unit" = "聯絡單位";
+"report.section.note" = "描述（選填）";
+"report.unit.placeholder" = "請選擇聯絡單位";
+"report.note.placeholder" = "描述發現的地點、動物狀況…";
+"report.submit" = "送出通報";
+"report.photo.add" = "新增照片";
+"report.photo.camera" = "拍照";
+"report.photo.library" = "從相簿選擇";
+"report.menu.title" = "選擇聯絡單位";
+"report.needUnit.title" = "請先選擇聯絡單位";
+"report.needUnit.message" = "選好要通報的收容所/動保機關後再送出。";
+"report.text.title" = "【浪浪通報】";
+"report.text.unit" = "通報單位：";
+"report.text.address" = "單位地址：";
+"report.text.descPrefix" = "描述：";
+"report.text.descDefault" = "（發現疑似流浪動物，請協助處理）";
+"report.text.footer" = "（由 毛窩 MaoWo App 通報）";
+
+"share.brand" = "🐾 毛窩 MaoWo ｜ 一起幫浪浪找個家";
+"share.text" = "我在「毛窩 MaoWo」看到一隻待認養的%1$@（%2$@），一起來關心牠吧！";
+"distance.meters" = "%.0f 公尺";
+"distance.kilometers" = "%.1f 公里";
+
+"detail.action.route" = "規劃路線";
+"detail.action.compare" = "加入比較";
+"detail.action.comparing" = "已加入比較";
+
+"adopt.flow.title" = "認養流程";
+"adopt.flow.1" = "確認家人同意，評估飼養空間、時間與經濟能力。";
+"adopt.flow.2" = "聯繫收容所確認動物狀態與開放/抽籤時間。";
+"adopt.flow.3" = "攜帶身分證件前往，現場互動了解性格。";
+"adopt.flow.4" = "完成認養手續、晶片植入與寵物登記。";
+"care.title" = "飼養須知";
+"care.tip.1" = "備妥食盆、睡窩、牽繩或外出籠等基本用品。";
+"care.tip.2" = "安排健康檢查、必要疫苗並定期驅蟲。";
+"care.tip.3" = "給予適應期，耐心陪伴建立信任。";
+"care.tip.4" = "依法完成寵物登記，並絕育以減少流浪問題。";
+
+"compare.title" = "比較";
+"compare.empty.title" = "尚未加入比較";
+"compare.empty.message" = "在動物詳情頁點「加入比較」，最多可比較三隻浪浪。";
+"compare.clear" = "清空";
+"compare.full" = "最多比較三隻，請先移除一隻。";
+
+"photo.saved" = "已儲存到相簿";
+
+"share.style.classic" = "經典";
+"share.style.polaroid" = "拍立得";
+"share.style.minimal" = "簡約";
+"share.composer.title" = "分享圖卡";
+"share.composer.message" = "加一句話（選填）…";
+"share.composer.share" = "分享";
+
+"onboarding.welcome.title" = "歡迎來到毛窩";
+"onboarding.welcome.subtitle" = "簡單設定，幫你更快找到想照顧的浪浪";
+"onboarding.kind.question" = "你想認養？";
+"onboarding.city.question" = "想關注哪些地區？（可多選 / 可跳過）";
+"onboarding.start" = "開始探索";
+"onboarding.skip" = "略過";
+
+"home.section.emergency" = "緊急救援";
+"home.section.recommended" = "為你推薦";
+"home.section.all" = "全部浪浪";
+"badge.urgent" = "緊急";
+"urgent.daysLeft" = "剩 %d 天";
+"urgent.lastDay" = "今日截止";
+
+"tab.assistant" = "顧問";
+"assistant.title" = "領養顧問";
+"assistant.placeholder" = "輸入訊息…";
+"advisor.greeting" = "嗨！我是領養顧問 🐾 回答幾個問題，我幫你找到最適合的浪浪。先問：你想養貓還是狗？";
+"advisor.q.space" = "了解！你的居住空間是？";
+"advisor.q.experience" = "你有養寵物的經驗嗎？";
+"advisor.q.city" = "最後，想在哪個地區認養呢？可直接打字或從下方選。";
+"advisor.result" = "根據你的條件，我推薦這幾隻浪浪：";
+"advisor.result.fallback" = "目前沒有完全符合的，但這幾隻也很值得認識：";
+"advisor.result.empty" = "目前查無可推薦的資料，請稍後再試或下拉重整列表。";
+"advisor.loading" = "正在載入浪浪資料，請稍候…";
+"advisor.restart" = "想重新找？輸入「重新開始」即可。";
+"advisor.opt.dog" = "狗";
+"advisor.opt.cat" = "貓";
+"advisor.opt.either" = "都可以";
+"advisor.opt.studio" = "套房";
+"advisor.opt.apartment" = "公寓";
+"advisor.opt.house" = "透天/有院子";
+"advisor.opt.beginner" = "新手";
+"advisor.opt.experienced" = "有經驗";
+"advisor.opt.anyCity" = "不限地區";
+"advisor.faq.fee" = "各收容所規費不同，通常包含晶片植入與寵物登記費用，金額不高。建議直接撥打該收容所電話確認最新資訊。";
+"advisor.faq.fallback" = "我可以幫你找適合的浪浪，也能回答認養流程、飼養須知或費用問題。要不要先告訴我你想養貓還是狗？";

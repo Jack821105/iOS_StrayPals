@@ -1,0 +1,253 @@
+/* MaoWo — English */
+
+"app.name" = "MaoWo";
+"launch.subtitle" = "Help every stray find a home";
+
+"settings.title" = "Settings";
+"settings.language" = "Language";
+"language.system" = "System Default";
+
+"tab.adopt" = "Adopt";
+"tab.report" = "Report";
+"tab.mine" = "Mine";
+
+"action.retry" = "Retry";
+"action.cancel" = "Cancel";
+"action.ok" = "OK";
+"action.goSettings" = "Open Settings";
+
+"list.search.placeholder" = "Search shelter, breed, color…";
+"list.empty.title" = "No matching pals";
+"list.empty.message" = "Try other keywords or filters.";
+"list.error.title" = "Failed to load";
+
+"kind.all" = "All";
+"kind.dog" = "Dogs";
+"kind.cat" = "Cats";
+"kind.other" = "Others";
+
+"sort.title" = "Sort by";
+"sort.latest" = "Newly Open";
+"sort.updated" = "Recently Updated";
+"sort.shelter" = "By Shelter";
+"sort.kind" = "By Kind";
+"sort.distance" = "Nearest";
+"sort.distancePicker" = "Nearest (by location)";
+
+"location.denied.title" = "Location Needed";
+"location.denied.message" = "Please enable location in Settings to sort the nearest pals by distance.";
+
+"filter.title" = "Filters";
+"filter.reset" = "Reset";
+"filter.apply" = "Apply";
+"filter.sex" = "Sex";
+"filter.age" = "Age";
+"filter.bodyType" = "Size";
+"filter.condition" = "Condition";
+"filter.city" = "City";
+"filter.sterilized" = "Neutered";
+"filter.vaccinated" = "Vaccinated";
+"filter.open" = "Open for adoption";
+
+"value.sex.male" = "Male";
+"value.sex.female" = "Female";
+"value.age.adult" = "Adult";
+"value.age.child" = "Young";
+"value.body.small" = "Small";
+"value.body.medium" = "Medium";
+"value.body.big" = "Large";
+"value.unknown" = "Unknown";
+"value.notProvided" = "Not provided";
+"value.sterilized.yes" = "Neutered";
+"value.sterilized.no" = "Not neutered";
+"value.vaccine.yes" = "Vaccinated";
+"value.vaccine.no" = "Not vaccinated";
+"value.noRemark" = "No additional notes.";
+"value.city.other" = "Other";
+
+"detail.section.basic" = "Basic Info";
+"detail.section.shelter" = "Shelter Info";
+"detail.section.note" = "Adoption Notes";
+"detail.status.open" = "Open for adoption";
+"detail.status.info" = "Adoption Info";
+"detail.row.kind" = "Kind";
+"detail.row.variety" = "Breed";
+"detail.row.sex" = "Sex";
+"detail.row.age" = "Age";
+"detail.row.body" = "Size";
+"detail.row.color" = "Color";
+"detail.row.sterilized" = "Neutered";
+"detail.row.vaccine" = "Rabies Vaccine";
+"detail.row.foundPlace" = "Found At";
+"detail.row.openDate" = "Open Date";
+"detail.row.shelter" = "Shelter";
+"detail.row.address" = "Address";
+"detail.row.phone" = "Phone";
+"detail.row.note" = "Notes";
+"detail.action.call" = "Call";
+"detail.action.map" = "Open Map";
+"detail.noPhone" = "This shelter has no phone number.";
+"detail.noAddress" = "This shelter has no address.";
+
+"mine.mode.favorites" = "Favorites";
+"mine.mode.recent" = "Recently Viewed";
+"mine.empty.fav.title" = "No favorites yet";
+"mine.empty.fav.message" = "Tap the heart on a card to add pals you like here.";
+"mine.empty.recent.title" = "No history yet";
+"mine.empty.recent.message" = "Pals you viewed will appear here for easy revisiting.";
+
+"report.photo.hint" = "Tap to take or choose a photo";
+"report.section.unit" = "Contact Unit";
+"report.section.note" = "Description (optional)";
+"report.unit.placeholder" = "Choose a contact unit";
+"report.note.placeholder" = "Describe the location and the animal's condition…";
+"report.submit" = "Submit Report";
+"report.photo.add" = "Add Photo";
+"report.photo.camera" = "Take Photo";
+"report.photo.library" = "Choose from Library";
+"report.menu.title" = "Choose a contact unit";
+"report.needUnit.title" = "Please choose a contact unit";
+"report.needUnit.message" = "Select the shelter/animal authority to report to, then submit.";
+"report.text.title" = "[Stray Report]";
+"report.text.unit" = "Unit: ";
+"report.text.address" = "Address: ";
+"report.text.descPrefix" = "Description: ";
+"report.text.descDefault" = "(Found a suspected stray animal, please assist.)";
+"report.text.footer" = "(Reported via MaoWo app)";
+
+"share.brand" = "🐾 MaoWo | Help every stray find a home";
+"share.text" = "I saw an adoptable %1$@ on MaoWo (%2$@). Come and care for it!";
+"distance.meters" = "%.0f m";
+"distance.kilometers" = "%.1f km";
+
+"detail.action.route" = "Directions";
+"detail.action.compare" = "Add to Compare";
+"detail.action.comparing" = "Added to Compare";
+
+"adopt.flow.title" = "Adoption Steps";
+"adopt.flow.1" = "Confirm family agreement; assess space, time and budget.";
+"adopt.flow.2" = "Contact the shelter for the animal's status and opening hours.";
+"adopt.flow.3" = "Bring your ID, visit, and interact to learn its personality.";
+"adopt.flow.4" = "Complete adoption, microchipping and pet registration.";
+"care.title" = "Care Tips";
+"care.tip.1" = "Prepare bowls, a bed, leash or carrier and basic supplies.";
+"care.tip.2" = "Arrange a health check, vaccines and regular deworming.";
+"care.tip.3" = "Allow an adjustment period; build trust with patience.";
+"care.tip.4" = "Register your pet and neuter to reduce strays.";
+
+"compare.title" = "Compare";
+"compare.empty.title" = "Nothing to compare yet";
+"compare.empty.message" = "Tap \"Add to Compare\" on a pet's page — up to three at a time.";
+"compare.clear" = "Clear";
+"compare.full" = "You can compare up to three. Remove one first.";
+
+"photo.saved" = "Saved to Photos";
+
+"share.style.classic" = "Classic";
+"share.style.polaroid" = "Polaroid";
+"share.style.minimal" = "Minimal";
+"share.composer.title" = "Share Card";
+"share.composer.message" = "Add a note (optional)…";
+"share.composer.share" = "Share";
+
+"onboarding.welcome.title" = "Welcome to MaoWo";
+"onboarding.welcome.subtitle" = "A quick setup to help you find the pet you'd love to care for";
+"onboarding.kind.question" = "What would you like to adopt?";
+"onboarding.city.question" = "Which areas to follow? (multi-select / skippable)";
+"onboarding.start" = "Start Exploring";
+"onboarding.skip" = "Skip";
+
+"home.section.emergency" = "Urgent";
+"home.section.recommended" = "For You";
+"home.section.all" = "All Pals";
+"badge.urgent" = "URGENT";
+"urgent.daysLeft" = "%d days left";
+"urgent.lastDay" = "Last day";
+
+"tab.assistant" = "Advisor";
+"assistant.title" = "Adoption Advisor";
+"assistant.placeholder" = "Type a message…";
+"advisor.greeting" = "Hi! I'm your adoption advisor 🐾 Answer a few questions and I'll find the best match for you. First: would you like a cat or a dog?";
+"advisor.q.space" = "Got it! What's your living space like?";
+"advisor.q.experience" = "Do you have experience keeping pets?";
+"advisor.q.city" = "Last one — which area would you like to adopt in? Type it or pick below.";
+"advisor.result" = "Based on your answers, here are a few pals I'd recommend:";
+"advisor.result.fallback" = "No exact matches right now, but these are worth meeting too:";
+"advisor.result.empty" = "No data to recommend yet — please try again later or pull to refresh the list.";
+"advisor.loading" = "Loading pets, one moment…";
+"advisor.restart" = "Want to start over? Just type \"restart\".";
+"advisor.opt.dog" = "Dog";
+"advisor.opt.cat" = "Cat";
+"advisor.opt.either" = "Either";
+"advisor.opt.studio" = "Studio";
+"advisor.opt.apartment" = "Apartment";
+"advisor.opt.house" = "House / yard";
+"advisor.opt.beginner" = "Beginner";
+"advisor.opt.experienced" = "Experienced";
+"advisor.opt.anyCity" = "Any area";
+"advisor.faq.fee" = "Fees vary by shelter and usually cover microchipping and pet registration — typically modest. Call the shelter directly to confirm the latest details.";
+"advisor.faq.fallback" = "I can help you find a good match, or answer questions about the adoption process, care tips, or fees. Want to start by telling me — cat or dog?";
+
+/* Shelter Map */
+"map.title" = "Shelter Map";
+"map.loading" = "Locating shelters…";
+"map.shelterCount" = "%d pals";
+
+/* Photo Search */
+"photo.search.title" = "Find by Photo";
+"photo.search.choose" = "Choose Photo";
+"photo.search.analyzing" = "Analyzing…";
+"photo.search.result" = "Here are the most similar pals:";
+"photo.search.empty" = "No similar pals found — try another photo.";
+"photo.search.emptyTitle" = "Find by Photo";
+"photo.search.emptyMessage" = "Upload a photo of a lost pet or a look you like — we'll match the most similar adoptable pals on-device (offline, private).";
+"photo.search.progress" = "Analyzing… %1$d / %2$d";
+"photo.search.similarity" = "%d%% match";
+
+/* Adoption Journal */
+"journal.title" = "Adoption Journal";
+"journal.empty.title" = "No adoption records yet";
+"journal.empty.message" = "Add the pal you brought home to keep a diary, track weight, and set vaccine & check-up reminders.";
+"journal.defaultName" = "your pal";
+"journal.addRecord" = "New Record";
+"journal.addEntry" = "New Entry";
+"journal.addReminder" = "New Reminder";
+"journal.delete.title" = "Delete this adoption record?";
+"journal.section.reminders" = "Care Reminders";
+"journal.section.entries" = "Diary";
+"journal.noReminders" = "No reminders yet. Tap “＋” to add vaccine, check-up and more.";
+"journal.noEntries" = "No entries yet. Tap “＋” to record today's moments.";
+"journal.entryNoText" = "(no text)";
+"journal.daysTogether" = "%d days together";
+"journal.weightValue" = "%.1f kg";
+"journal.field.name" = "Name";
+"journal.field.kind" = "Kind";
+"journal.field.shelter" = "From shelter (optional)";
+"journal.field.adoptedDate" = "Adoption date";
+"journal.field.note" = "Note (optional)";
+"journal.field.date" = "Date";
+"journal.field.diary" = "Today's moments";
+"journal.field.weight" = "Weight (optional)";
+"journal.field.weightHint" = "e.g. 5.2 (kg)";
+"journal.photoAdded" = "Photo selected";
+"journal.field.reminderKind" = "Reminder type";
+"journal.field.reminderTitle" = "Reminder";
+"journal.field.dueDate" = "Remind at";
+"journal.reminderHint" = "We'll send a local notification at the set time.";
+"journal.notify.denied.title" = "Notifications off";
+"journal.notify.denied.message" = "Your reminder is saved, but notifications must be enabled to alert you when it's due. Open Settings?";
+"care.kind.vaccine" = "Vaccine";
+"care.kind.deworm" = "Deworm";
+"care.kind.checkup" = "Check-up";
+"care.kind.medicine" = "Medicine";
+"care.kind.grooming" = "Grooming";
+"care.kind.other" = "Other";
+
+/* Detail — Live Activity / Adopted */
+"detail.live.start" = "Start Adoption Countdown (Lock Screen / Dynamic Island)";
+"detail.live.stop" = "Stop Adoption Countdown";
+"detail.live.unavailable" = "Couldn't start Live Activity. Make sure Live Activities are allowed in Settings.";
+"detail.markAdopted" = "I Adopted — Start a Journal";
+
+/* Common */
+"action.delete" = "Delete";

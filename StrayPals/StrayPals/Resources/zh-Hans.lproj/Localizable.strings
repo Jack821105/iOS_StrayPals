@@ -1,0 +1,253 @@
+/* 毛窝 — 简体中文 */
+
+"app.name" = "毛窝";
+"launch.subtitle" = "一起帮浪浪找个家";
+
+"settings.title" = "设置";
+"settings.language" = "语言";
+"language.system" = "跟随系统";
+
+"tab.adopt" = "认养";
+"tab.report" = "通报";
+"tab.mine" = "我的";
+
+"action.retry" = "重新载入";
+"action.cancel" = "取消";
+"action.ok" = "了解";
+"action.goSettings" = "前往设置";
+
+"list.search.placeholder" = "搜索收容所、品种、毛色…";
+"list.empty.title" = "找不到符合的浪浪";
+"list.empty.message" = "试试其他关键字或筛选条件。";
+"list.error.title" = "载入失败";
+
+"kind.all" = "全部";
+"kind.dog" = "狗";
+"kind.cat" = "猫";
+"kind.other" = "其他";
+
+"sort.title" = "排序方式";
+"sort.latest" = "最新开放";
+"sort.updated" = "最近更新";
+"sort.shelter" = "按收容所";
+"sort.kind" = "按种类";
+"sort.distance" = "离你最近";
+"sort.distancePicker" = "离你最近（按定位）";
+
+"location.denied.title" = "需要定位权限";
+"location.denied.message" = "请到「设置」开启定位，才能按距离排序最近的浪浪。";
+
+"filter.title" = "进阶筛选";
+"filter.reset" = "重置";
+"filter.apply" = "套用";
+"filter.sex" = "性别";
+"filter.age" = "年龄";
+"filter.bodyType" = "体型";
+"filter.condition" = "条件";
+"filter.city" = "县市";
+"filter.sterilized" = "已绝育";
+"filter.vaccinated" = "已打疫苗";
+"filter.open" = "开放认养中";
+
+"value.sex.male" = "公";
+"value.sex.female" = "母";
+"value.age.adult" = "成年";
+"value.age.child" = "幼年";
+"value.body.small" = "小型";
+"value.body.medium" = "中型";
+"value.body.big" = "大型";
+"value.unknown" = "未知";
+"value.notProvided" = "未提供";
+"value.sterilized.yes" = "已绝育";
+"value.sterilized.no" = "未绝育";
+"value.vaccine.yes" = "已施打";
+"value.vaccine.no" = "未施打";
+"value.noRemark" = "目前没有更多说明。";
+"value.city.other" = "其他";
+
+"detail.section.basic" = "基本资料";
+"detail.section.shelter" = "收容所信息";
+"detail.section.note" = "认养说明";
+"detail.status.open" = "开放认养中";
+"detail.status.info" = "认养信息";
+"detail.row.kind" = "种类";
+"detail.row.variety" = "品种";
+"detail.row.sex" = "性别";
+"detail.row.age" = "年龄";
+"detail.row.body" = "体型";
+"detail.row.color" = "毛色";
+"detail.row.sterilized" = "绝育";
+"detail.row.vaccine" = "狂犬病疫苗";
+"detail.row.foundPlace" = "寻获地";
+"detail.row.openDate" = "开放日期";
+"detail.row.shelter" = "收容所";
+"detail.row.address" = "地址";
+"detail.row.phone" = "电话";
+"detail.row.note" = "备注";
+"detail.action.call" = "拨打电话";
+"detail.action.map" = "打开地图";
+"detail.noPhone" = "此收容所未提供电话。";
+"detail.noAddress" = "此收容所未提供地址。";
+
+"mine.mode.favorites" = "收藏";
+"mine.mode.recent" = "最近浏览";
+"mine.empty.fav.title" = "还没有收藏";
+"mine.empty.fav.message" = "在动物卡片上点击爱心，就能把喜欢的浪浪加入这里。";
+"mine.empty.recent.title" = "还没有浏览记录";
+"mine.empty.recent.message" = "看过的浪浪会出现在这里，方便你回头再看看。";
+
+"report.photo.hint" = "点击拍照或选择照片";
+"report.section.unit" = "联系单位";
+"report.section.note" = "描述（选填）";
+"report.unit.placeholder" = "请选择联系单位";
+"report.note.placeholder" = "描述发现的地点、动物状况…";
+"report.submit" = "送出通报";
+"report.photo.add" = "新增照片";
+"report.photo.camera" = "拍照";
+"report.photo.library" = "从相册选择";
+"report.menu.title" = "选择联系单位";
+"report.needUnit.title" = "请先选择联系单位";
+"report.needUnit.message" = "选好要通报的收容所/动保机关后再送出。";
+"report.text.title" = "【浪浪通报】";
+"report.text.unit" = "通报单位：";
+"report.text.address" = "单位地址：";
+"report.text.descPrefix" = "描述：";
+"report.text.descDefault" = "（发现疑似流浪动物，请协助处理）";
+"report.text.footer" = "（由 毛窝 MaoWo App 通报）";
+
+"share.brand" = "🐾 毛窝 MaoWo ｜ 一起帮浪浪找个家";
+"share.text" = "我在「毛窝 MaoWo」看到一只待认养的%1$@（%2$@），一起来关心它吧！";
+"distance.meters" = "%.0f 米";
+"distance.kilometers" = "%.1f 公里";
+
+"detail.action.route" = "规划路线";
+"detail.action.compare" = "加入比较";
+"detail.action.comparing" = "已加入比较";
+
+"adopt.flow.title" = "认养流程";
+"adopt.flow.1" = "确认家人同意，评估饲养空间、时间与经济能力。";
+"adopt.flow.2" = "联系收容所确认动物状态与开放/抽签时间。";
+"adopt.flow.3" = "携带身份证件前往，现场互动了解性格。";
+"adopt.flow.4" = "完成认养手续、晶片植入与宠物登记。";
+"care.title" = "饲养须知";
+"care.tip.1" = "备妥食盆、睡窝、牵绳或外出笼等基本用品。";
+"care.tip.2" = "安排健康检查、必要疫苗并定期驱虫。";
+"care.tip.3" = "给予适应期，耐心陪伴建立信任。";
+"care.tip.4" = "依法完成宠物登记，并绝育以减少流浪问题。";
+
+"compare.title" = "比较";
+"compare.empty.title" = "尚未加入比较";
+"compare.empty.message" = "在动物详情页点「加入比较」，最多可比较三只浪浪。";
+"compare.clear" = "清空";
+"compare.full" = "最多比较三只，请先移除一只。";
+
+"photo.saved" = "已保存到相册";
+
+"share.style.classic" = "经典";
+"share.style.polaroid" = "拍立得";
+"share.style.minimal" = "简约";
+"share.composer.title" = "分享图卡";
+"share.composer.message" = "加一句话（选填）…";
+"share.composer.share" = "分享";
+
+"onboarding.welcome.title" = "欢迎来到毛窝";
+"onboarding.welcome.subtitle" = "简单设置，帮你更快找到想照顾的浪浪";
+"onboarding.kind.question" = "你想认养？";
+"onboarding.city.question" = "想关注哪些地区？（可多选 / 可跳过）";
+"onboarding.start" = "开始探索";
+"onboarding.skip" = "跳过";
+
+"home.section.emergency" = "紧急救援";
+"home.section.recommended" = "为你推荐";
+"home.section.all" = "全部浪浪";
+"badge.urgent" = "紧急";
+"urgent.daysLeft" = "剩 %d 天";
+"urgent.lastDay" = "今日截止";
+
+"tab.assistant" = "顾问";
+"assistant.title" = "领养顾问";
+"assistant.placeholder" = "输入消息…";
+"advisor.greeting" = "嗨！我是领养顾问 🐾 回答几个问题，我帮你找到最适合的浪浪。先问：你想养猫还是狗？";
+"advisor.q.space" = "了解！你的居住空间是？";
+"advisor.q.experience" = "你有养宠物的经验吗？";
+"advisor.q.city" = "最后，想在哪个地区领养呢？可直接打字或从下方选。";
+"advisor.result" = "根据你的条件，我推荐这几只浪浪：";
+"advisor.result.fallback" = "目前没有完全符合的，但这几只也很值得认识：";
+"advisor.result.empty" = "目前查无可推荐的数据，请稍后再试或下拉刷新列表。";
+"advisor.loading" = "正在加载浪浪数据，请稍候…";
+"advisor.restart" = "想重新找？输入「重新开始」即可。";
+"advisor.opt.dog" = "狗";
+"advisor.opt.cat" = "猫";
+"advisor.opt.either" = "都可以";
+"advisor.opt.studio" = "套房";
+"advisor.opt.apartment" = "公寓";
+"advisor.opt.house" = "独栋/有院子";
+"advisor.opt.beginner" = "新手";
+"advisor.opt.experienced" = "有经验";
+"advisor.opt.anyCity" = "不限地区";
+"advisor.faq.fee" = "各收容所规费不同，通常包含晶片植入与宠物登记费用，金额不高。建议直接拨打该收容所电话确认最新信息。";
+"advisor.faq.fallback" = "我可以帮你找适合的浪浪，也能回答领养流程、饲养须知或费用问题。要不要先告诉我你想养猫还是狗？";
+
+/* 收容所地图 */
+"map.title" = "收容所地图";
+"map.loading" = "定位收容所中…";
+"map.shelterCount" = "%d 只浪浪";
+
+/* 以图找毛孩 */
+"photo.search.title" = "以图找毛孩";
+"photo.search.choose" = "选择照片";
+"photo.search.analyzing" = "分析中…";
+"photo.search.result" = "最相似的浪浪在这里：";
+"photo.search.empty" = "找不到相似的浪浪，换一张照片试试。";
+"photo.search.emptyTitle" = "以图找毛孩";
+"photo.search.emptyMessage" = "上传走失宠物或喜欢的照片，于设备端比对长相最相似的待领养浪浪（离线、保护隐私）。";
+"photo.search.progress" = "分析中… %1$d / %2$d";
+"photo.search.similarity" = "相似 %d%%";
+
+/* 领养日记 / 照护提醒 */
+"journal.title" = "领养日记";
+"journal.empty.title" = "还没有领养记录";
+"journal.empty.message" = "把带回家的毛孩加进来，记录日记、体重，并设定疫苗与回诊提醒。";
+"journal.defaultName" = "毛孩";
+"journal.addRecord" = "新增领养记录";
+"journal.addEntry" = "新增日记";
+"journal.addReminder" = "新增提醒";
+"journal.delete.title" = "删除这笔领养记录？";
+"journal.section.reminders" = "照护提醒";
+"journal.section.entries" = "日记";
+"journal.noReminders" = "尚无提醒，点右上「＋」新增疫苗、回诊等提醒。";
+"journal.noEntries" = "尚无日记，点右上「＋」记录今天的点滴。";
+"journal.entryNoText" = "（无文字）";
+"journal.daysTogether" = "已陪伴 %d 天";
+"journal.weightValue" = "%.1f kg";
+"journal.field.name" = "名字";
+"journal.field.kind" = "种类";
+"journal.field.shelter" = "来自收容所（选填）";
+"journal.field.adoptedDate" = "领养日期";
+"journal.field.note" = "备注（选填）";
+"journal.field.date" = "日期";
+"journal.field.diary" = "今天的点滴";
+"journal.field.weight" = "体重（选填）";
+"journal.field.weightHint" = "例如 5.2（公斤）";
+"journal.photoAdded" = "已选择照片";
+"journal.field.reminderKind" = "提醒类型";
+"journal.field.reminderTitle" = "提醒内容";
+"journal.field.dueDate" = "提醒时间";
+"journal.reminderHint" = "时间到时会以本地通知提醒你。";
+"journal.notify.denied.title" = "未开启通知";
+"journal.notify.denied.message" = "提醒已保存，但需开启通知权限才会在到期时提醒你。要前往设置开启吗？";
+"care.kind.vaccine" = "疫苗";
+"care.kind.deworm" = "驱虫";
+"care.kind.checkup" = "回诊";
+"care.kind.medicine" = "喂药";
+"care.kind.grooming" = "美容";
+"care.kind.other" = "其他";
+
+/* 详情 — 实时活动 / 已领养 */
+"detail.live.start" = "开启领养倒数（锁定画面/灵动岛）";
+"detail.live.stop" = "结束领养倒数";
+"detail.live.unavailable" = "无法开启实时活动，请确认系统已允许「实时活动」。";
+"detail.markAdopted" = "我已领养，建立日记";
+
+/* 通用 */
+"action.delete" = "删除";

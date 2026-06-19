@@ -1,0 +1,5 @@
+"CFBundleDisplayName" = "毛窝";
+"NSCameraUsageDescription" = "用于拍摄您发现的流浪动物照片，以便通报给收容所或动保机关。";
+"NSPhotoLibraryUsageDescription" = "用于选择流浪动物照片，以便通报给收容所或动保机关。";
+"NSLocationWhenInUseUsageDescription" = "用于按您的位置排序「离你最近」的收容所动物。";
+"NSUserTrackingUsageDescription" = "用于提供更相关的广告内容，协助维持 App 免费运营。";
