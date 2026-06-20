@@ -10,6 +10,9 @@ import UIKit
 #if canImport(FirebaseCore)
 import FirebaseCore
 #endif
+#if canImport(FirebaseAnalytics)
+import FirebaseAnalytics
+#endif
 
 // MARK: - AppDelegate
 
@@ -26,6 +29,11 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
         #if canImport(FirebaseCore)
         if Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist") != nil {
             FirebaseApp.configure()
+            // GoogleService-Info.plist 的 IS_ANALYTICS_ENABLED 預設為 false，
+            // 這裡明確開啟分析收集（使用無 IDFA 版本，不涉及追蹤），後台才會有使用數據。
+            #if canImport(FirebaseAnalytics)
+            Analytics.setAnalyticsCollectionEnabled(true)
+            #endif
         }
         #endif
 

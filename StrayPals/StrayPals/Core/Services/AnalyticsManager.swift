@@ -9,6 +9,9 @@
 //
 
 import Foundation
+#if canImport(FirebaseAnalytics)
+import FirebaseAnalytics
+#endif
 
 // MARK: - AnalyticsEvent
 
@@ -91,7 +94,10 @@ final class AnalyticsManager {
         let params = event.parameters.isEmpty ? "" : " \(event.parameters)"
         print("📊 [Analytics] \(event.name)\(params)")
         #endif
-        // TODO: 串接正式分析服務，例如：
-        // Analytics.logEvent(event.name, parameters: event.parameters)
+
+        // Firebase Analytics（無 IDFA 版本，不觸發 ATT）。未連結 SDK 時自動略過。
+        #if canImport(FirebaseAnalytics)
+        Analytics.logEvent(event.name, parameters: event.parameters)
+        #endif
     }
 }
