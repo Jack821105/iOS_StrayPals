@@ -62,9 +62,13 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         launch.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         window.addSubview(launch)
         launch.play { [weak self] in
-            // 動畫結束 → 首次啟動先導覽，再請求 ATT、啟動廣告。
+            // 動畫結束 → 首次啟動先導覽。
             self?.showOnboardingIfNeeded(on: window) {
-                TrackingManager.shared.requestIfNeeded {
+                // 這版廣告預設關閉，且「不」請求 App 追蹤（ATT），以通過 App Store 追蹤隱私審查。
+                // 只有在廣告實際開啟時才啟動 AdMob SDK（且為非個人化廣告，不需 ATT）。
+                // 日後若要開啟「個人化」廣告：①加回 Info.plist 的 NSUserTrackingUsageDescription
+                // ②在此恢復 TrackingManager.shared.requestIfNeeded { … } ③於 App 隱私權聲明追蹤用途。
+                if AppConfig.shared.resolvedAdsEnabled {
                     AdsService.shared.start()
                 }
             }

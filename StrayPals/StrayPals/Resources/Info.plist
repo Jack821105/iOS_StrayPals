@@ -51,8 +51,8 @@
 	<string>用於將喜歡的浪浪照片儲存到您的相簿。</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>用於依您的位置排序「離你最近」的收容所動物。</string>
-	<key>NSUserTrackingUsageDescription</key>
-	<string>用於提供更相關的廣告內容，協助維持 App 免費營運。</string>
+	<!-- 註：這版廣告預設關閉、未請求 App 追蹤（ATT），故「不」放 NSUserTrackingUsageDescription，
+	     以通過 App Store「追蹤隱私」審查。日後要開啟個人化廣告時，再加回此鍵並於 App 隱私權聲明追蹤用途。 -->
 	<!-- AdMob：以下為 Google 官方「測試」App ID，正式上線請換成自己的 ca-app-pub-XXXX~XXXX -->
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3940256099942544~1458002511</string>

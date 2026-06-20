@@ -59,6 +59,9 @@ final class ShareCardComposerViewController: UIViewController {
         previewImageView.contentMode = .scaleAspectFit
         previewImageView.layer.cornerRadius = 12
         previewImageView.clipsToBounds = true
+        // 預覽圖會吸收剩餘空間（而非以原圖像素撐爆版面），其餘控制項才不會被擠出畫面。
+        previewImageView.setContentHuggingPriority(.defaultLow, for: .vertical)
+        previewImageView.setContentCompressionResistancePriority(.defaultLow, for: .vertical)
 
         styleControl.selectedSegmentIndex = 0
         styleControl.selectedSegmentTintColor = .appPrimary
@@ -84,11 +87,22 @@ final class ShareCardComposerViewController: UIViewController {
         stack.setCustomSpacing(20, after: previewImageView)
 
         view.addSubviews(stack)
+
+        // 正常時貼齊安全區底部（高優先級，可被鍵盤約束讓位）。
+        let stackBottom = stack.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20)
+        stackBottom.priority = .defaultHigh
+        // 預覽圖最小高度（高優先級；鍵盤升起空間不足時會讓預覽圖縮小，而非擠出按鈕）。
+        let previewMinHeight = previewImageView.heightAnchor.constraint(greaterThanOrEqualToConstant: 200)
+        previewMinHeight.priority = .defaultHigh
+
         NSLayoutConstraint.activate([
             stack.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             stack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             stack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            stack.bottomAnchor.constraint(lessThanOrEqualTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            stackBottom,
+            // 鍵盤升起時，將整個 stack 推到鍵盤上方，分享按鈕不被遮住（required）。
+            view.keyboardLayoutGuide.topAnchor.constraint(greaterThanOrEqualTo: stack.bottomAnchor, constant: 20),
+            previewMinHeight,
             closeButton.widthAnchor.constraint(equalToConstant: 28),
             closeButton.heightAnchor.constraint(equalToConstant: 28)
         ])
