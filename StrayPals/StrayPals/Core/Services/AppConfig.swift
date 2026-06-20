@@ -105,7 +105,7 @@ final class AppConfig {
             Keys.reviewVersion: Self.currentAppVersion as NSObject
         ])
 
-        remoteConfig.fetchAndActivate { [weak self] _, _ in
+        remoteConfig.fetchAndActivate { [weak self] status, error in
             guard let self else { return }
             self.adsEnabled = remoteConfig.configValue(forKey: Keys.adsEnabled).boolValue
             self.disableAdsForReview = remoteConfig.configValue(forKey: Keys.disableAdsForReview).boolValue
@@ -113,6 +113,23 @@ final class AppConfig {
             if !unit.isEmpty { self.adBannerUnitID = unit }
             let version = remoteConfig.configValue(forKey: Keys.reviewVersion).stringValue
             if !version.isEmpty { self.reviewVersion = version }
+
+            #if DEBUG
+            // 用來確認 Firebase / Remote Config 是否成功連線（僅 DEBUG 輸出）。
+            if let error {
+                print("🔥 [Firebase RC] 連線/抓取失敗：\(error.localizedDescription)")
+            } else {
+                let statusText: String
+                switch status {
+                case .successFetchedFromRemote: statusText = "✅ 成功從雲端抓到最新設定"
+                case .successUsingPreFetchedData: statusText = "✅ 連線成功（使用先前快取的設定，未達抓取間隔）"
+                case .error: statusText = "⚠️ 抓取發生錯誤"
+                @unknown default: statusText = "未知狀態"
+                }
+                print("🔥 [Firebase RC] \(statusText) ｜ ads_enabled=\(self.adsEnabled), review_version=\(self.reviewVersion)")
+            }
+            #endif
+
             DispatchQueue.main.async { completion?() }
         }
         #else
