@@ -15,7 +15,7 @@
 		AA0000000000000000000069 /* MaoWoWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000060 /* MaoWoWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		AA0000000000000000000073 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000071 /* FirebaseCore */; };
 		AA0000000000000000000074 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000072 /* FirebaseRemoteConfig */; };
-		AA0000000000000000000090 /* FirebaseAnalyticsWithoutAdId in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000091 /* FirebaseAnalyticsWithoutAdId */; };
+		AA0000000000000000000090 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = AA0000000000000000000091 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,7 +93,7 @@
 				AA0000000000000000000020 /* Kingfisher in Frameworks */,
 				AA0000000000000000000073 /* FirebaseCore in Frameworks */,
 				AA0000000000000000000074 /* FirebaseRemoteConfig in Frameworks */,
-				AA0000000000000000000090 /* FirebaseAnalyticsWithoutAdId in Frameworks */,
+				AA0000000000000000000090 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +178,7 @@
 				AA0000000000000000000021 /* Kingfisher */,
 				AA0000000000000000000071 /* FirebaseCore */,
 				AA0000000000000000000072 /* FirebaseRemoteConfig */,
-				AA0000000000000000000091 /* FirebaseAnalyticsWithoutAdId */,
+				AA0000000000000000000091 /* FirebaseAnalyticsWithoutAdIdSupport */,
 			);
 			productName = StrayPals;
 			productReference = AA0000000000000000000004 /* StrayPals.app */;

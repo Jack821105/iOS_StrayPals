@@ -75,6 +75,18 @@ final class LaunchAnimationView: UIView {
 
     /// 播放啟動動畫，結束後淡出並回呼。
     func play(completion: @escaping () -> Void) {
+        // 保證後續流程「最多只跑一次、且一定會跑」：
+        // 即使系統因故未觸發動畫 completion（例如「減少動態效果」或啟動期間
+        // 動畫被略過），失效保險計時器也會揭開主畫面，避免 App 卡在啟動覆蓋層
+        // 被系統 watchdog 判定為「啟動後當機」而被審查退件。
+        var didFinish = false
+        let finish: () -> Void = { [weak self] in
+            guard !didFinish else { return }
+            didFinish = true
+            self?.removeFromSuperview()
+            completion()
+        }
+
         // 1) 爪印彈入。
         UIView.animate(withDuration: 0.6, delay: 0.05,
                        usingSpringWithDamping: 0.55, initialSpringVelocity: 6,
@@ -96,8 +108,12 @@ final class LaunchAnimationView: UIView {
         UIView.animate(withDuration: 0.45, delay: 1.35, options: [.curveEaseIn]) {
             self.alpha = 0
         } completion: { _ in
-            self.removeFromSuperview()
-            completion()
+            finish()
+        }
+
+        // 4) 失效保險：無論動畫是否如期完成，最遲 2.2 秒後一定揭開主畫面。
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.2) {
+            finish()
         }
     }
 }
