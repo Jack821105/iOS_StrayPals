@@ -64,12 +64,11 @@ final class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         launch.play { [weak self] in
             // 動畫結束 → 首次啟動先導覽。
             self?.showOnboardingIfNeeded(on: window) {
-                // Apple 要求：追蹤前需先取得 ATT 同意。
-                // 因此先請求 ATT 授權，回呼後再啟動 AdMob / Firebase Analytics / 廣告追蹤 SDK。
-                TrackingManager.shared.requestATTIfNeeded {
-                    if AppConfig.shared.resolvedAdsEnabled {
-                        AdsService.shared.start()
-                    }
+                // 本版不含廣告 SDK、不請求 App 追蹤（ATT），App 不連結 AppTrackingTransparency 框架。
+                // 日後若要開啟「個人化」廣告：①重新加入 AdMob SDK ②加回 Info.plist 的
+                // NSUserTrackingUsageDescription 並在此請求 ATT 授權 ③於 App 隱私權聲明追蹤用途。
+                if AppConfig.shared.resolvedAdsEnabled {
+                    AdsService.shared.start()
                 }
             }
         }
