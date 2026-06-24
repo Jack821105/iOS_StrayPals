@@ -33,8 +33,11 @@ final class TrackingManager {
     /// - 不論使用者選擇為何，都會回呼 `completion`，呼叫端可在此再啟動廣告 / 追蹤 SDK。
     func requestATTIfNeeded(completion: @escaping () -> Void) {
         if #available(iOS 14, *) {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
-                ATTrackingManager.requestTrackingAuthorization { _ in
+            DispatchQueue.main.asyncAfter(deadline: .now()) {
+                let before = ATTrackingManager.trackingAuthorizationStatus
+                print("🔐 [ATT] 請求前狀態 = \(Self.statusText(before)) ｜ 只有 notDetermined 才會跳彈窗")
+                ATTrackingManager.requestTrackingAuthorization { status in
+                    print("🔐 [ATT] 請求後狀態 = \(Self.statusText(status))")
                     DispatchQueue.main.async {
                         completion()
                     }
@@ -44,4 +47,17 @@ final class TrackingManager {
             completion()
         }
     }
+
+    
+    @available(iOS 14, *)
+    private static func statusText(_ status: ATTrackingManager.AuthorizationStatus) -> String {
+        switch status {
+        case .notDetermined: return "notDetermined（未決定，會跳彈窗）"
+        case .restricted:    return "restricted（受限，不會跳）"
+        case .denied:        return "denied（已拒絕，不會再跳）"
+        case .authorized:    return "authorized（已同意，不會再跳）"
+        @unknown default:    return "unknown"
+        }
+    }
+    
 }
