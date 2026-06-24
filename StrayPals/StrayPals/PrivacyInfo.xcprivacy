@@ -8,24 +8,11 @@
 	<key>NSPrivacyTrackingDomains</key>
 	<array/>
 
-	<!-- 本 App 自身程式碼收集的資料類型。
-	     收藏／最近瀏覽／認養日記／提醒／定位皆只存在裝置本機，未上傳，故不在此宣告；
-	     僅匿名使用行為（Firebase Analytics，無 IDFA）用於分析。 -->
+	<!-- 本 App 不收集任何離開裝置的資料：收藏／最近瀏覽／認養日記／提醒／定位
+	     皆只存在裝置本機；分析事件僅輸出至本機 Console，未上傳任何伺服器。
+	     （已移除 Firebase，無雲端分析。） -->
 	<key>NSPrivacyCollectedDataTypes</key>
-	<array>
-		<dict>
-			<key>NSPrivacyCollectedDataType</key>
-			<string>NSPrivacyCollectedDataTypeProductInteraction</string>
-			<key>NSPrivacyCollectedDataTypeLinked</key>
-			<false/>
-			<key>NSPrivacyCollectedDataTypeTracking</key>
-			<false/>
-			<key>NSPrivacyCollectedDataTypePurposes</key>
-			<array>
-				<string>NSPrivacyCollectedDataTypePurposeAnalytics</string>
-			</array>
-		</dict>
-	</array>
+	<array/>
 
 	<!-- Required-reason API：本 App 自身僅使用 UserDefaults（讀寫自家偏好）。
 	     CA92.1 = 存取同一 App 內、由本 App 寫入的資訊。
