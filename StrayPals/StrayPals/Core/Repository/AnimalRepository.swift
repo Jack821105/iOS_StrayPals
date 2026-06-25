@@ -6,9 +6,11 @@
 //  ViewModel 只與 Repository 對話，不需知道資料來自 API 還是快取。
 //
 //  讀取策略（Cache-Then-Network）：
-//    1. `cachedAnimals()` 提供有效快取，讓畫面「秒開」。
+//    1. `cachedAnimals()` 提供有效快取（無則回傳「內建種子資料」），讓畫面「秒開」。
 //    2. `fetchAnimals()` 向 API 取得最新；成功則更新快取。
 //    3. API 失敗但有快取（即使過期）→ 沿用快取，支援離線瀏覽。
+//    4. 連快取都沒有（如全新安裝且首抓失敗）→ 退回「內建種子資料」，
+//       確保任何網路狀況下畫面都「不會空白」（審查、海外慢速網路皆然）。
 //
 
 import Foundation
@@ -52,12 +54,13 @@ final class AnimalRepository: AnimalRepositoryProtocol {
     // MARK: AnimalRepositoryProtocol
 
     func cachedAnimals() -> [Animal]? {
-        guard let cached = cache.load([Animal].self, forKey: endpoint.cacheKey, maxAge: cacheMaxAge),
-              !cached.isEmpty else {
-            return nil
+        if let cached = cache.load([Animal].self, forKey: endpoint.cacheKey, maxAge: cacheMaxAge),
+           !cached.isEmpty {
+            analytics.track(.loadedFromCache)
+            return cached
         }
-        analytics.track(.loadedFromCache)
-        return cached
+        // 無有效快取（如全新安裝）→ 退回內建種子，讓畫面立即有內容、不空白。
+        return Self.seedAnimals
     }
 
     func fetchAnimals() async throws -> [Animal] {
@@ -73,7 +76,23 @@ final class AnimalRepository: AnimalRepositoryProtocol {
                !stale.isEmpty {
                 return stale
             }
+            // 連快取都沒有 → 退回內建種子，確保畫面永遠有內容可顯示。
+            if let seed = Self.seedAnimals { return seed }
             throw error
         }
     }
+
+    // MARK: - 內建種子資料（離線 / 海外慢速網路 / 首抓失敗時的最後防線）
+
+    /// 打包在 App 內的動物快照，App 啟動即可立刻顯示，避免任何情況下畫面空白。
+    /// 僅解碼一次後常駐記憶體。
+    private static let seedAnimals: [Animal]? = {
+        guard let url = Bundle.main.url(forResource: "seed_animals", withExtension: "json"),
+              let data = try? Data(contentsOf: url),
+              let animals = try? JSONDecoder().decode([Animal].self, from: data),
+              !animals.isEmpty else {
+            return nil
+        }
+        return animals
+    }()
 }

@@ -49,7 +49,8 @@ enum APIEndpoint {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.cachePolicy = .reloadIgnoringLocalCacheData
-        request.timeoutInterval = 20
+        // 開放資料回應較大（數 MB），海外 / 慢速網路需較長逾時，避免畫面卡在載入。
+        request.timeoutInterval = 30
         request.setValue("application/json", forHTTPHeaderField: "Accept")
         return request
     }
