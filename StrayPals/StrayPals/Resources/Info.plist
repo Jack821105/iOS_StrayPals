@@ -51,8 +51,7 @@
 	<string>用於將喜歡的浪浪照片儲存到您的相簿。</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>用於依您的位置排序「離你最近」的收容所動物。</string>
-	<!-- 註：這版廣告功能停用、未連結 AdMob SDK、未請求 App 追蹤（ATT）。
-	     因此「不」放 NSUserTrackingUsageDescription / GADApplicationIdentifier / SKAdNetworkItems，
-	     以通過 App Store 追蹤隱私審查。日後要開啟廣告時，再連同 AdMob SDK、ATT 與這些鍵一起加回。 -->
+	<key>NSUserTrackingUsageDescription</key>
+	<string>此識別碼將用於提供個人化廣告與改善廣告成效。</string>
 </dict>
 </plist>
