@@ -37,19 +37,14 @@ final class TrackingManager {
             return
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            #if DEBUG
             print("🔐 [ATT] 請求前狀態 = \(Self.statusText(ATTrackingManager.trackingAuthorizationStatus))")
-            #endif
             ATTrackingManager.requestTrackingAuthorization { status in
-                #if DEBUG
                 print("🔐 [ATT] 請求後狀態 = \(Self.statusText(status))")
-                #endif
                 DispatchQueue.main.async { completion() }
             }
         }
     }
 
-    #if DEBUG
     @available(iOS 14, *)
     private static func statusText(_ status: ATTrackingManager.AuthorizationStatus) -> String {
         switch status {
@@ -60,5 +55,4 @@ final class TrackingManager {
         @unknown default:    return "unknown"
         }
     }
-    #endif
 }
